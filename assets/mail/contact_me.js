@@ -24,7 +24,7 @@ $(function () {
             var json = {name: name, phone: phone, email: email, message: message}
             $.ajax({
                 // --- CHANGE THIS LINE TO YOUR OWN API GATEWAY  -------- 
-                url: "{Insert your own AWS API Gateway Endpoint URL here}",
+                url: "https://9lm9fefr2d.execute-api.eu-west-1.amazonaws.com/default/omotolas_intelligent_portfolio_function",
                 // ------------------------------------------------------  
                 type: "POST",
                 data: JSON.stringify(json),
